@@ -6,11 +6,13 @@ import random
 
 HelpfulFunctions.AskQuestion("Make sure that you have one of your active planets selected", HelpfulFunctions.confirmativeReplies)
 
-greenCheckBoxPos = [328, 608]
-nextArrowPos = [382, 605]
-buildingMenu = [105, 367]
-plus100Button = [688, 206]
-minesButton = [487, 130]
+time.sleep(1)
+
+greenCheckBoxPos = [493, 908]
+nextArrowPos = [567, 910]
+buildingMenu = [109, 547]
+plus100Button = [1047, 301]
+minesButton = [744, 197]
 
 def Click(x, y, pause=0.4):
     win32api.SetCursorPos((x, y))
@@ -21,7 +23,7 @@ def Click(x, y, pause=0.4):
 
 # Checks if the green bottom check box has been checked. If it has nothing in the planet should be changed
 def PlanetCanBeChanged():
-    if (pyautogui.pixel(greenCheckBoxPos[0], greenCheckBoxPos[1])[1] > 160):
+    if (pyautogui.pixel(greenCheckBoxPos[0], greenCheckBoxPos[1])[1] > 170):
         return True
     else:
         return False
