@@ -3,7 +3,7 @@ import requests # type: ignore
 # Define the API endpoint and any parameters
 url = "https://www.thebluealliance.com/api/v3"  # Replace with the actual API URL
 params = {
-    "X-TBA-Auth-Key": "vuKa1Oef0QiLsJg64lygiZsLY51u65Kx3DYRLS601oVJBcartJpF16d8N4kRzhwD",  # Replace with actual query parameters
+    "X-TBA-Auth-Key": "TOKEN",  # Replace with actual query parameters
 }
 TEAM_KEY = "frc2898" # TODO change to actual team id
 EVENT_KEY = "2025orore" # TODO change to actual event id
